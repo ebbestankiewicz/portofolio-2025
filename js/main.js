@@ -2,21 +2,21 @@ const projects = [
     {
         title: "Gamehub",
         description: "An online store for gamers to buy digital titles.",
-        image: "images/gamehub-thumb.jpg",
+        image: "images/gamehub-thumb.png",
         github: "https://github.com/ebbestankiewicz/Gamehub-js-ca",
         live: "https://ebbestankiewicz.github.io/Gamehub-js-ca//"
     },
     {
         title: "Semester Project 1",
         description: "A modern blog platform with post creation and editing.",
-        image: "images/semester-thumb.jpg",
+        image: "images/semester-thumb.png",
         github: "https://github.com/ebbestankiewicz/Semester-project-1",
         live: "https://ebbestankiewicz.github.io/Semester-project-1/"
     },
     {
         title: "Exam Project 1",
         description: "Full-featured blog app using Noroff API with login.",
-        image: "images/exam-thumb.jpg",
+        image: "images/exam-thumb.png",
         github: "https://github.com/ebbestankiewicz/FED1-PE1-ebbestankiewicz",
         live: "https://blueprintliving.netlify.app/"
     }
