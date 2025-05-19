@@ -36,7 +36,7 @@ projects.forEach(project => {
                 <i class="fab fa-github"></i> GitHub
             </a>
             <a href="${project.live}" class="live-btn" target="_blank">
-                Live Demo
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
             </a>
         </div>
     `;
