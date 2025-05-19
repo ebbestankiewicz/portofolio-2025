@@ -26,55 +26,44 @@ footer {
 }
 
 /*about section */
-.about {
+.about-me {
+    max-width: 800px;
+    margin: 4rem auto;
+    padding: 2rem;
     background: white;
     border-radius: 8px;
-    padding: 2rem;
-    margin-top: 2rem;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-}
-
-.about-content {
-    display: flex;
-    align-items: flex-start;
-    gap: 2rem;
-    flex-wrap: wrap;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 .profile-pic {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     object-fit: cover;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 1rem;
+    border: 3px solid #090C9B;
 }
 
-.about-text {
-    flex: 1;
-}
-
-.about h2 {
-    font-size: 1.8rem;
+.about-me h2,
+.about-me h3 {
     color: #090C9B;
     margin-bottom: 1rem;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.about p {
+.about-me p {
     font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 1rem;
+    color: #333;
+    margin-bottom: 2rem;
 }
 
-@media (max-width: 600px) {
-    .about-content {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .profile-pic {
-        margin-bottom: 1rem;
-    }
+.skills {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    font-size: 2rem;
+    color: #090C9B;
 }
 
 /*projects section */
