@@ -32,8 +32,12 @@ projects.forEach(project => {
         <h3>${project.title}</h3>
         <p>${project.description}</p>
         <div class="buttons">
-            <a href="${project.github}" target="_blank">GitHub</a>
-            <a href="${project.live}" target="_blank">Live Demo</a>
+            <a href="https://github.com/your-repo" class="github-btn" target="_blank">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://your-live-demo.com" class="live-btn" target="_blank">
+                Live Demo
+            </a>
         </div>
     `;
     container.appendChild(card);

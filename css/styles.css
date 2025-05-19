@@ -63,19 +63,39 @@ footer {
 .project-card .buttons {
     display: flex;
     justify-content: space-between;
+    gap: 1rem;
     padding: 1rem;
 }
 
+
 .project-card .buttons a {
     text-decoration: none;
-    color: white;
-    background-color: #090C9B;
     padding: 0.5rem 1rem;
     border-radius: 4px;
     font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
     transition: background 0.2s ease;
 }
 
-.project-card .buttons a:hover {
+.project-card .buttons .github-btn {
+    background-color: #24292e;
+    color: white;
+}
+
+
+.project-card .buttons .github-btn:hover {
+    background-color: #1b1f23;
+}
+
+
+.project-card .buttons .live-btn {
+    background-color: #090C9B;
+    color: white;
+}
+
+
+.project-card .buttons .live-btn:hover {
     background-color: #050770;
 }
