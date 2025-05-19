@@ -24,3 +24,58 @@ footer {
     background: #090C9B;
     color: white;
 }
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.project-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.project-card h3 {
+    margin: 1rem;
+    font-size: 1.3rem;
+    color: #090C9B;
+}
+
+.project-card p {
+    margin: 0 1rem 1rem;
+    font-size: 0.95rem;
+}
+
+.project-card .buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.project-card .buttons a {
+    text-decoration: none;
+    color: white;
+    background-color: #090C9B;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background 0.2s ease;
+}
+
+.project-card .buttons a:hover {
+    background-color: #050770;
+}
