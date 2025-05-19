@@ -25,6 +25,7 @@ footer {
     color: white;
 }
 
+/*projects section */
 .projects {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -58,6 +59,7 @@ footer {
 .project-card p {
     margin: 0 1rem 1rem;
     font-size: 0.95rem;
+    line-height: 1.5;
 }
 
 .project-card .buttons {
@@ -66,7 +68,6 @@ footer {
     gap: 1rem;
     padding: 1rem;
 }
-
 
 .project-card .buttons a {
     text-decoration: none;
@@ -84,17 +85,14 @@ footer {
     color: white;
 }
 
-
 .project-card .buttons .github-btn:hover {
     background-color: #1b1f23;
 }
-
 
 .project-card .buttons .live-btn {
     background-color: #090C9B;
     color: white;
 }
-
 
 .project-card .buttons .live-btn:hover {
     background-color: #050770;
