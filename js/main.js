@@ -73,3 +73,12 @@ const observer = new IntersectionObserver(
     
         container.appendChild(card);
     });
+
+    window.addEventListener("load", () => {
+        const loader = document.querySelector(".loader-wrapper");
+        if (loader) {
+            loader.style.opacity = 0;
+            loader.style.pointerEvents = "none";
+          setTimeout(() => loader.remove(), 500); // Optional: remove after fade
+        }
+    });
