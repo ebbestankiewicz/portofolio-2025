@@ -42,3 +42,34 @@ projects.forEach(project => {
     `;
     container.appendChild(card);
 });
+
+// Intersection Observer for scroll animations
+const observer = new IntersectionObserver(
+    entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target); // Optional: remove after first trigger
+            }
+        });
+    },
+    { threshold: 0.1 }
+);
+
+  // Apply to all .animate elements
+    document.querySelectorAll('.animate').forEach(el => {
+        observer.observe(el);
+    });
+
+
+    let delay = 0;
+    projects.forEach(project => {
+        const card = document.createElement("div");
+        card.className = "project-card animate";
+        card.style.transitionDelay = `${delay}s`;
+        delay += 0.2;
+    
+        card.innerHTML = `...`;
+    
+        container.appendChild(card);
+    });
