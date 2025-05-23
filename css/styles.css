@@ -176,7 +176,7 @@ main {
 
   /* ABOUT */
 .about-me {
-    margin: 6rem auto;
+    margin: 0 auto;
     background: var(--card-bg);
     border-radius: var(--radius);
     padding: 2rem;
