@@ -77,6 +77,58 @@ header h1 {
     width: 100%;
 }
 
+/* ============= HAMBURGER MENU STYLES ============= */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--text-light);
+    cursor: pointer;
+    margin-left: auto;
+}
+
+    @media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: rgba(15, 23, 42, 0.95);
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 200px;
+        padding: 1rem 0;
+        border-radius: 0 0 var(--radius) var(--radius);
+    }
+    .nav-links li {
+        margin: 0.5rem 0;
+        text-align: center;
+    }
+    .menu-toggle {
+        display: block;
+    }
+    .header-container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    .about-container {
+        justify-content: center;
+    }
+}
+
+.nav-links.open {
+    display: flex;
+}
+
+.nav-links {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.nav-links.open {
+    opacity: 1;
+    transform: translateY(0);
+}
+
   /* MAIN CONTAINER */
 main {
     padding-top: 120px;

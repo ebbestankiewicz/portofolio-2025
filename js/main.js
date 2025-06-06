@@ -82,3 +82,12 @@ const observer = new IntersectionObserver(
           setTimeout(() => loader.remove(), 500); // Optional: remove after fade
         }
     });
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks   = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+        });
+    });
