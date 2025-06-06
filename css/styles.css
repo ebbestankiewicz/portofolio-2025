@@ -234,6 +234,41 @@ main {
     color: var(--accent);
 }
 
+.skills i {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skills i:hover {
+    transform: scale(1.25);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Individual hover colors */
+.skills i.fa-html5:hover {
+    color: #E34F26; /* HTML5 orange */
+}
+
+.skills i.fa-css3-alt:hover {
+    color: #1572B6; /* CSS3 blue */
+}
+
+.skills i.fa-js:hover {
+    color: #F7DF1E; /* JavaScript yellow */
+}
+
+.skills i.fa-github:hover {
+    color: #6e5494; /* GitHub purple */
+}
+
+.skills a {
+    color: inherit;          /* keep the icon’s color */
+    text-decoration: none;   /* remove underline */
+}
+
+.skills a i:hover {
+    cursor: pointer;
+}
+
   /* FOOTER */
 footer {
     margin-top: 5rem;
